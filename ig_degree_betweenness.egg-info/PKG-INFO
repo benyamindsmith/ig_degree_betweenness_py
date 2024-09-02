@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: ig-degree-betweenness
+Version: 0.1
+Summary: Implementation of the degree-betweenness community detection algortihm developed by Benjamin Smith and Tyler Pittman
