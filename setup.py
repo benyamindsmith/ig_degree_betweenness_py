@@ -11,6 +11,7 @@ setup(
     version="0.1.0",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown", 
     packages=find_packages(),
     install_requires=["python-igraph"],
     keywords=['igraph'],
@@ -19,7 +20,9 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent'
+        'Operating System :: OS Independent',
+        "Topic :: Scientific/Engineering :: Network Analysis"
+        "Topic :: Scientific/Engineering :: Artificial Intelligence"
     ],
     project_urls={
         'Benjamin Smith ORCID': 'https://orcid.org/0009-0007-2206-0177',
