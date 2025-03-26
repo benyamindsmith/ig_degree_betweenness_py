@@ -1,2 +1,1 @@
-igraph
-numpy
+python-igraph
