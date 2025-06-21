@@ -15,7 +15,7 @@ setup(
     install_requires=["python-igraph"],
     entry_points={
         "console_scripts": [
-            "ig_degree_betweenness=ig_degree_betweenness:main",
+            "ig_degree_betweenness=ig_degree_betweenness:ig_degree_betweenness",
         ],
     },
     keywords=['igraph'],
