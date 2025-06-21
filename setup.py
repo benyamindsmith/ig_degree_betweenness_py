@@ -12,8 +12,12 @@ setup(
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown", 
-    packages=find_packages(),
     install_requires=["python-igraph"],
+    entry_points={
+        "console_scripts": [
+            "ig_degree_betweenness=ig_degree_betweenness:main",
+        ],
+    },
     keywords=['igraph'],
         url='https://github.com/benyamindsmith/ig_degree_betweenness_py',
     packages=find_packages(),
@@ -21,7 +25,7 @@ setup(
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        "Topic :: Scientific/Engineering :: Network Analysis"
+        "Topic :: Scientific/Engineering :: Network Analysis",
         "Topic :: Scientific/Engineering :: Artificial Intelligence"
     ],
     project_urls={

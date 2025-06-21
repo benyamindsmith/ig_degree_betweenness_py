@@ -1,5 +1,21 @@
 # ig_degree_betweenness_py
 
-Python implemmentation of the `ig.degree.betweenness` R package.
+Python implementation of the Smith-Pittman Algorithm available in the [`ig.degree.betweenness`](https://github.com/benyamindsmith/ig.degree.betweenness/) R package.
 
-Following this [FreeCodeCamp Tutorial](https://www.freecodecamp.org/news/build-your-first-python-package/) on how to package the code. 
+Unlike the R package which is more graphical. The python implementation preforms and outputs identified communities in the command line.
+
+# Installation
+
+```sh
+pip install git+https://github.com/benyamindsmith/ig_degree_betweenness_py.git
+```
+# Usage
+
+```sh
+# for an undirected graph (default)
+$ python ig_degree_betweenness.py my_edges.txt
+
+# for a directed graph
+$ python ig_degree_betweenness.py -d my_edges.txt
+
+```
