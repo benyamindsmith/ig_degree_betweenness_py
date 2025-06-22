@@ -1,18 +1,17 @@
 from setuptools import setup, find_packages
 
 DESCRIPTION = "Smith-Pittman Community Detection Algorithm for 'igraph' Objects (2024)"
-LONG_DESCRIPTION = """
-Implements the "Smith-Pittman" community detection algorithm for network analysis using 'igraph' objects. This algorithm combines node degree and betweenness centrality measures to identify communities within networks, with a gradient evident in social partitioning. The package provides functions for community detection, visualization, and analysis of the resulting community structure. Methods are based on results from Smith, Pittman and Xu (2024) <doi:10.48550/arXiv.2411.01394>.
-"""
+LONG_DESCRIPTION = open("README.md").read()
 setup(
     name="ig_degree_betweenness",
     author='Benjamin Smith, Tyler Pittman, Wei Xu',
     author_email='benyamin.smith@mail.utoronto.ca, Tyler.Pittman@uhn.ca, Wei.Xu@uhn.ca',
-    version="0.1.0",
+    version="0.1.1",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown", 
     install_requires=["python-igraph"],
+    license= "MIT",
     entry_points={
         "console_scripts": [
             "ig_degree_betweenness=ig_degree_betweenness:ig_degree_betweenness",
