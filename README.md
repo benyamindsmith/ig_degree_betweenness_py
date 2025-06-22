@@ -4,6 +4,12 @@ Python implementation of the Smith-Pittman Algorithm available in the [`ig.degre
 
 This code can be used both in regular scripting and as a terminal tool.
 
+<a> 
+<img src='https://github.com/benyamindsmith/ig.degree.betweenness/assets/46410142/37f82c83-1600-4e9f-913e-5e43bbe90427', height = "300"/>
+</a>
+
+
+
 # Installation
 
 ```sh
