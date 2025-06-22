@@ -1,7 +1,7 @@
 # ig_degree_betweenness_py
 
 ![PyPI - Version](https://img.shields.io/pypi/v/ig-degree-betweenness)
-[![Downloads](https://pepy.tech/badge/ig-degree-betweenness)](https://pepy.tech/project/ig-degree-betweenness)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/ig-degree-betweenness)
 [![arXiv](https://img.shields.io/badge/arXiv-2411.01394-b31b1b.svg)](https://arxiv.org/abs/2411.01394)
 
 
@@ -26,7 +26,7 @@ To install from PyPI, run:
 pip install ig-degree-betweenness
 ```
 
-To install from Github, run. 
+To install from GitHub, run. 
 
 ```sh
 pip install git+https://github.com/benyamindsmith/ig_degree_betweenness_py.git
