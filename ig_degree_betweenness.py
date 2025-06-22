@@ -18,7 +18,7 @@ def parse_args():
     )
     return parser.parse_args()
 
-def cluster_degree_betweenness(graph):
+def community_degree_betweenness(graph):
     # (unchanged body)
     graph_ = graph.copy()
     n_edges = len(graph_.es)
@@ -69,7 +69,7 @@ def cluster_degree_betweenness(graph):
 
             modal = graph.modularity(cmpnt.membership)
             modularities.append(modal)
-            print(f"Iteration {i+1}: modularity {modal:.4f}")
+            #print(f"Iteration {i+1}: modularity {modal:.4f}")
 
         except Exception:
             break
@@ -79,30 +79,32 @@ def cluster_degree_betweenness(graph):
     best_membership = cmpnts[best_idx].membership
 
     # summary
-    print(f"\nSummary:")
-    print(f"  Number of nodes: {n_nodes}")
-    print(f"  Number of edges: {n_edges}")
-    print(f"  Best iteration: {best_idx+1}")
-    print(f"  Max modularity: {max(modularities):.4f}")
-    print(f"  Communities found: {len(set(best_membership))}")
-    print(f"  Membership vector: {best_membership}")
-    print(f"  Node names: {graph.vs['name']}")
+    # print(f"\nSummary:")
+    # print(f"  Number of nodes: {n_nodes}")
+    # print(f"  Number of edges: {n_edges}")
+    # print(f"  Best iteration: {best_idx+1}")
+    # print(f"  Max modularity: {max(modularities):.4f}")
+    # print(f"  Communities found: {len(set(best_membership))}")
+    # print(f"  Membership vector: {best_membership}")
+    # print(f"  Node names: {graph.vs['name']}")
 
     # bridges
-    bridges = graph.bridges()
-    bridge_nodes = [
-        (graph.vs[e[0]]["name"], graph.vs[e[1]]["name"])
-        for e in (graph.es[i].tuple for i in bridges)
-    ]
+    # bridges = graph.bridges()
+    # bridge_nodes = [
+    #     (graph.vs[e[0]]["name"], graph.vs[e[1]]["name"])
+    #     for e in (graph.es[i].tuple for i in bridges)
+    # ]
 
-    return {
-        "names": graph.vs["name"],
-        "vcount": graph.vcount(),
-        "algorithm": "degree+betweenness",
-        "modularity": modularities,
-        "membership": best_membership,
-        "bridges": bridge_nodes
-    }
+    # return {
+    #     "names": graph.vs["name"],
+    #     "vcount": graph.vcount(),
+    #     "algorithm": "node degree+edge betweenness",
+    #     "modularity": modularities,
+    #     "membership": best_membership,
+    #     "bridges": bridge_nodes
+    # }
+    return ig.clustering.VertexClustering(graph, membership=best_membership)
+
 
 def main():
     args = parse_args()
@@ -115,10 +117,8 @@ def main():
     g = ig.Graph.TupleList(edges, directed=args.directed)
 
     # Compute clustering
-    result = cluster_degree_betweenness(g)
-
-    # (Optional: do something with result dict, e.g. save to JSON)
-    # import json; print(json.dumps(result, indent=2))
+    result = community_degree_betweenness(g)
+    print(result)
 
 if __name__ == "__main__":
     main()
