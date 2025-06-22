@@ -1,5 +1,7 @@
 # ig_degree_betweenness_py
 
+![PyPI - Version](https://img.shields.io/pypi/v/ig-degree-betweenness)
+
 Python implementation of the Smith-Pittman Algorithm available in the [`ig.degree.betweenness`](https://github.com/benyamindsmith/ig.degree.betweenness/) R package.
 
 This code can be used both as a standard Python library for scripting and as a command-line tool.

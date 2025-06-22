@@ -22,11 +22,14 @@ setup(
         url='https://github.com/benyamindsmith/ig_degree_betweenness_py',
     packages=find_packages(),
     classifiers=[
+        "Operating System :: OS Independent",
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-        "Topic :: Scientific/Engineering :: Network Analysis",
-        "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Information Analysis",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+
     ],
     project_urls={
         'Benjamin Smith ORCID': 'https://orcid.org/0009-0007-2206-0177',
