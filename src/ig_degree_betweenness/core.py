@@ -20,7 +20,16 @@ def parse_args():
 
 def community_degree_betweenness(graph):
     """
-    NEED TO DOCUMENT THIS FUNCTION
+    Community Structure Detection Based on Node Degree Centrality and Edge Betweenness
+
+    Referred to as the "Smith-Pittman" algorithm in Smith et al (2024). This algorithm detects communities by calculating the degree centrality measures of nodes and edge betweenness.
+
+    The algorithm iteratively removes edges based on their betweenness centrality and the degree of their adjacent nodes. At each iteration, it identifies the edge with the highest betweenness centrality among those connected to nodes with the highest degree. It then removes that edge and recalculates the modularity of the resulting graph. This process continues until all edges have been assessed or until no further subgraph can be created with the optimal number of communites being chosen based on maximization of modularity.
+
+    Args:
+        graph (igraph.Graph): The input graph, which can be directed or undirected.
+    Returns:
+        igraph.VertexClustering: A clustering object containing the community structure of the graph.
     """
     # (unchanged body)
     graph_ = graph.copy()
