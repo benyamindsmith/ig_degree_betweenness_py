@@ -1,8 +1,0 @@
-README.md
-setup.py
-ig_degree_betweenness.egg-info/PKG-INFO
-ig_degree_betweenness.egg-info/SOURCES.txt
-ig_degree_betweenness.egg-info/dependency_links.txt
-ig_degree_betweenness.egg-info/entry_points.txt
-ig_degree_betweenness.egg-info/requires.txt
-ig_degree_betweenness.egg-info/top_level.txt

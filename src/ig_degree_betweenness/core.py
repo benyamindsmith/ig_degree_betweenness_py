@@ -19,6 +19,9 @@ def parse_args():
     return parser.parse_args()
 
 def community_degree_betweenness(graph):
+    """
+    NEED TO DOCUMENT THIS FUNCTION
+    """
     # (unchanged body)
     graph_ = graph.copy()
     n_edges = len(graph_.es)

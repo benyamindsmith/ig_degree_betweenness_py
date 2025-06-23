@@ -77,9 +77,9 @@ To run this code in the terminal, run:
 
 ```sh
 # for an undirected graph (default)
-$ python ig_degree_betweenness.py my_edges.txt
+$ python ig_degree_betweenness my_edges.txt
 
 # for a directed graph
-$ python ig_degree_betweenness.py -d my_edges.txt
+$ python ig_degree_betweenness -d my_edges.txt
 
 ```

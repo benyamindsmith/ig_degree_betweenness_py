@@ -1,2 +1,0 @@
-[console_scripts]
-ig_degree_betweenness = ig_degree_betweenness:ig_degree_betweenness
