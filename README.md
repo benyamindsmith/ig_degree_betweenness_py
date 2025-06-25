@@ -1,6 +1,6 @@
 # ig_degree_betweenness_py
 
-![PyPI - Version](https://img.shields.io/pypi/v/ig-degree-betweenness)
+[![PyPI - Version](https://img.shields.io/pypi/v/ig-degree-betweenness)](https://pypi.org/project/ig-degree-betweenness/)
 ![Pepy Total Downloads](https://img.shields.io/pepy/dt/ig-degree-betweenness)
 [![arXiv](https://img.shields.io/badge/arXiv-2411.01394-b31b1b.svg)](https://arxiv.org/abs/2411.01394)
 
