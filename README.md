@@ -7,6 +7,8 @@
 
 Python implementation of the Smith-Pittman Algorithm available in the [`ig.degree.betweenness`](https://github.com/benyamindsmith/ig.degree.betweenness/) R package.
 
+For the C implementation see [`ig_degree_betweenness_c`](https://github.com/benyamindsmith/ig_degree_betweenness_c).
+
 This code can be used both as a standard Python library for scripting and as a command-line tool.
 
 <a> 
