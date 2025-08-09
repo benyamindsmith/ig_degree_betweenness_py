@@ -73,15 +73,15 @@ fig1.set_size_inches(20, 20)
 
 ![](./sp_communities_matplotlib.png)
 
-To run this code in the terminal on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format that is tab separated (see *edgelist.txt*), run: 
+To run this code in the terminal on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format that is tab separated (see simulated dataset of *edgelist.txt*), run: 
 
 ## Terminal Usage
 
 ```sh
 # for an undirected graph (default)
-$ python ig_degree_betweenness my_edges.txt
+$ python ig_degree_betweenness edgelist.txt
 
 # for a directed graph
-$ python ig_degree_betweenness -d my_edges.txt
+$ python ig_degree_betweenness -d edgelist.txt
 
 ```
