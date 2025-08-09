@@ -73,7 +73,7 @@ fig1.set_size_inches(20, 20)
 
 ![](./sp_communities_matplotlib.png)
 
-To run this code in the terminal on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format that is tab separated, run: 
+To run this code in the terminal on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format that is tab separated (see *edgelist.txt*), run: 
 
 ## Terminal Usage
 
