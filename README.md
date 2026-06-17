@@ -2,7 +2,9 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/ig-degree-betweenness)](https://pypi.org/project/ig-degree-betweenness/)
 [![Pepy Total Downloads](https://img.shields.io/pepy/dt/ig-degree-betweenness)](https://pepy.tech/projects/ig-degree-betweenness)
-[![arXiv](https://img.shields.io/badge/arXiv-2411.01394-b31b1b.svg)](https://arxiv.org/abs/2411.01394)
+[![arXiv](https://img.shields.io/badge/arXiv-2411.01394-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2411.01394)
+[![UTJPH](https://img.shields.io/badge/UTJPH-10.33137%2Futjph.v5i1.44130-1f618d)](https://doi.org/10.33137/utjph.v5i1.44130)
+[![CJS](https://img.shields.io/badge/CJS-10.1002%2Fcjs.70060-991915)](https://doi.org/10.1002/cjs.70060)
 
 
 Python implementation of the Smith-Pittman Algorithm available in the [`ig.degree.betweenness`](https://github.com/benyamindsmith/ig.degree.betweenness/) R package.
